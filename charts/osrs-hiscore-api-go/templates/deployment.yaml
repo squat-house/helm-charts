@@ -20,3 +20,8 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
+          env:
+          {{ include "environment.vars" . | trim }}
+          {{ include "local.volume_mounts" . | trim }}
+      {{ include "local.volumes" . | trim }}
+
