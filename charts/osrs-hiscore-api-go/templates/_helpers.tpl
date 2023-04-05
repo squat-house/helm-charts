@@ -1,4 +1,6 @@
 {{- define "environment.vars" -}}
+          - name: AWS_REGION
+            value: us-east-1
           {{- if eq .Values.local_env true }}
           - name: LOCAL_ENV
             value: "true"
