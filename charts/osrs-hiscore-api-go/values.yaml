@@ -1,0 +1,5 @@
+image:
+  pullPolicy: Always
+  
+service:
+  port: 8080
