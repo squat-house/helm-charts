@@ -3,6 +3,16 @@ entries:
   osrs-hiscore-api:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-04-05T18:13:04.267058433Z"
+    description: OSRS Hiscore API
+    digest: 2706a5bf054c241ba9d6bef9048df759a38c129b37c1b575bafe9246196c2d2c
+    name: osrs-hiscore-api
+    type: application
+    urls:
+    - https://github.com/squat-house/helm-charts/releases/download/osrs-hiscore-api-0.1.3/osrs-hiscore-api-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-04-05T16:56:03.10496466Z"
     description: OSRS Hiscore API
     digest: be3200b3f03da5ae789d7592c0df61bf84d196651a3a81da589842fb9af304bf
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://github.com/squat-house/helm-charts/releases/download/osrs-hiscore-api-0.1.0/osrs-hiscore-api-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-05T16:56:03.104977561Z"
+generated: "2023-04-05T18:13:04.267078033Z"
