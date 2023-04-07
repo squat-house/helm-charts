@@ -51,4 +51,15 @@ entries:
     urls:
     - https://github.com/squat-house/helm-charts/releases/download/osrs-hiscore-api-0.1.0/osrs-hiscore-api-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-07T18:21:56.682837121Z"
+  osrs-player-tracker:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-04-07T18:39:20.628546382Z"
+    description: OSRS Player Tracker
+    digest: 07286731a194b6ba7574b25f88165cde4f879de7d0dd248b38ff92320fd720a0
+    name: osrs-player-tracker
+    type: application
+    urls:
+    - https://github.com/squat-house/helm-charts/releases/download/osrs-player-tracker-0.1.5/osrs-player-tracker-0.1.5.tgz
+    version: 0.1.5
+generated: "2023-04-07T18:39:20.628561783Z"
