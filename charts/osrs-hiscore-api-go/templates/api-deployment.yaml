@@ -21,8 +21,8 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           env:
-            - name: ROLE
-              value: api
+          - name: ROLE
+            value: api
           {{ include "environment.vars" . | trim }}
           {{ include "local.volume_mounts" . | trim }}
       {{ include "local.volumes" . | trim }}
