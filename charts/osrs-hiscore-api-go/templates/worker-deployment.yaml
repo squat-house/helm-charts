@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-worker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-worker
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}-worker
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}-worker
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+          env:
+            - name: ROLE
+              value: worker
+          {{ include "environment.vars" . | trim }}
+          {{ include "local.volume_mounts" . | trim }}
+      {{ include "local.volumes" . | trim }}
+
