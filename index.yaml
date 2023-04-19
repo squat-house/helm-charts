@@ -54,6 +54,16 @@ entries:
   osrs-player-tracker:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-04-19T00:56:55.236801594Z"
+    description: OSRS Player Tracker
+    digest: c3b3e417c49964efe8e3ff0eb3bae91dfd19744c0d2ccfffa9610b54c4d8cecc
+    name: osrs-player-tracker
+    type: application
+    urls:
+    - https://github.com/squat-house/helm-charts/releases/download/osrs-player-tracker-0.1.6/osrs-player-tracker-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-04-07T18:39:20.628546382Z"
     description: OSRS Player Tracker
     digest: 07286731a194b6ba7574b25f88165cde4f879de7d0dd248b38ff92320fd720a0
@@ -62,4 +72,4 @@ entries:
     urls:
     - https://github.com/squat-house/helm-charts/releases/download/osrs-player-tracker-0.1.5/osrs-player-tracker-0.1.5.tgz
     version: 0.1.5
-generated: "2023-04-07T18:39:20.628561783Z"
+generated: "2023-04-19T00:56:55.236816794Z"
