@@ -3,3 +3,9 @@ image:
   
 service:
   port: 8080
+
+api:
+  enabled: true
+
+worker:
+  enabled: true

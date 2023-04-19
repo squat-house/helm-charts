@@ -1,3 +1,4 @@
+{{ if eq .Values.worker.enabled true }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,14 +17,10 @@ spec:
         - name: {{ .Chart.Name }}-worker
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
           env:
           - name: ROLE
             value: worker
           {{ include "environment.vars" . | trim }}
           {{ include "local.volume_mounts" . | trim }}
       {{ include "local.volumes" . | trim }}
-
+{{ end }}
