@@ -10,9 +10,13 @@
 {{- define "local.volumes" -}}
 {{- if eq .Values.local_env true }}
       volumes:
+          - name: aws-creds
+            hostPath:
+                path: {{ .Values.home_dir}}/.aws/
+                type: Directory
           - name: env-file
             hostPath:
-                path: {{ .Values.tilt_dir}}/local.env
+                path: {{ .Values.tilt_dir}}/.env
                 type: File
 {{ end }}
 {{ end }}
@@ -22,5 +26,7 @@
             volumeMounts:
               - name: env-file
                 mountPath: /app/.env
+              - name: aws-creds
+                mountPath: /root/.aws
 {{ end }}
 {{ end }}
